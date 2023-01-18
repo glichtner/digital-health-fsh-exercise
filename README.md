@@ -40,7 +40,7 @@ Recommendation #8 from the ["S3-Leitlinie Empfehlungen zur stationären Therapie
 * Identify appropriate concepts in standardized vocabularies
 * Create an instance of [EvidenceVariable](http://hl7.org/fhir/5.0.0-snapshot3/evidencevariable.html) for the population part (look up the link to identify required fields)
 * Create an instance of [ActivityDefinition](http://hl7.org/fhir/5.0.0-snapshot3/activitydefinition.html) for the intervention part (look up the link to identify required fields)
-* Link population to evidence (hint: look at `subject[x]`)
+* Link population to intervention (hint: look at `subject[x]`)
 
 Create a file named `exercise01.fsh` containing both instances.
 
