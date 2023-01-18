@@ -20,7 +20,7 @@ Description: "European Languages"
 * include codes from system http://snomed.org/info where concept is-a #297931006 "Language commonly spoken in Europe (qualifier value)"
 
 Instance: EuropeanSingleExample
-InstanceOf: Population
+InstanceOf: EuropeanSingle
 Usage: #example
 Title: "Example"
 Description: "Example"
