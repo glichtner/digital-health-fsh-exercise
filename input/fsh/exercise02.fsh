@@ -2,7 +2,7 @@ Profile: Population
 Parent: EvidenceVariable
 Id: Population
 Title: "Population"
-Description: ""
+Description: "Profile for EvidenceVariable to define a population"
 * title 1..1
 * characteristic
   * description 1..1
@@ -12,33 +12,14 @@ Description: ""
   * definitionExpression 0..0
   * definitionId 0..0
   * definitionByCombination 0..0
-  * definitionCodeableConcept.coding.system = $snomed
+  * definitionCodeableConcept.coding.system = "http://snomed.info/sct"
 
-Instance: PopulationExample
-InstanceOf: Population
-Usage: #example
-Title: "Population Example"
-Description: ""
-* title = "Example Recommendation"
-* status = #draft
-* characteristic[0]
-  * description = "COVID-19"
-  * definitionCodeableConcept = $snomed#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
-  
 Profile: InterventionMedicationAdministration
 Parent: ActivityDefinition
 Id: InterventionMedicationAdministration
 Title: "Intervention"
-Description: ""
+Description: "Profile for ActivityDefinition to define an intervention"
 * subjectCanonical 1..1
 * subjectCanonical only Canonical(Population)
 * productCodeableConcept 1..1
-  * coding.system = $snomed
-
-Instance: InterventionMedicationAdministrationExample
-InstanceOf: InterventionMedicationAdministration
-Usage: #example
-Title: "Intervention Example"
-* status = #active
-* subjectCanonical = Canonical(PopulationExample)
-* productCodeableConcept = $snomed#387559003 "Ivermectin (substance)"
+  * coding.system = "http://snomed.info/sct"
