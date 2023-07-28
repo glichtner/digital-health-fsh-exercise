@@ -21,7 +21,7 @@
 3. Optional: Install VSCode and VSCode extension for FSH
     * vs code: https://code.visualstudio.com/
     * fsh extension: https://fshschool.org/docs/vscode/
-4. Clone this repository or run `sushi --init` and modify the generated sushi-config.yml to use `fhirVersion: 5.0.0-snapshot3`.
+4. Clone this repository or run `sushi --init` and modify the generated sushi-config.yml to use `fhirVersion: 5.0.0`.
 
 
 ## Exercise 1
@@ -72,7 +72,7 @@ Create a file named `exercise02.fsh` containing both profiles.
 
 
 ## Hints
-* Make sure to use the latest FHIR release: 5.0.0-snapshot3 (configure in sushi-config.yml or use template from https://github.com/glichtner/digital-health-fsh-exercise )
+* Make sure to use the latest FHIR release: 5.0.0 (configure in sushi-config.yml or use template from https://github.com/glichtner/digital-health-fsh-exercise )
 * (Regularly) run sushi to validate your profiles & instances
 * sushi treats separate .fsh files as if they are one single file, so make sure to not use the same name for different profiles/instances in different files
 * Use the FHIR ShortHand reference for help: 
